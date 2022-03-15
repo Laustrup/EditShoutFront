@@ -1,0 +1,39 @@
+
+            <!-- Login fragment -->
+            <main>
+                <section id="login_section">
+                    <div id="login_mismatch"></div>
+                    <h4>Login:</h4>
+
+                    <!-- Added this in edited for login -->
+                    <label for="username_login">Username:</label>
+                    <input type="text" id="username_login" placeholder="username..." max="40" required>
+
+                    <label for="password_login">Password:</label>
+                    <input type="password" id="password_login" placeholder="password..." max="40" required>
+
+                    <button onclick="validateLogin()">Login</button>
+                </section>
+
+                <section id="create_user_section">
+                    <h4>If you don't exist already, sign up!:</h4>
+
+                        <label for="new_user_username">Username*: </label>
+                        <input type="text" id="new_user_username" placeholder="username..." max="40" required>
+
+                        <label for="new_user_password">Password*: </label>
+                        <input type="password" id="new_user_password" placeholder="password..." max="40" required>
+
+                        <label for="new_user_description">Description: </label>
+                        <textarea id="new_user_description" placeholder="write something about yourself..."></textarea>
+
+                        <label for="new_user_gender">Gender*: </label>
+                        <select id="new_user_gender" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                        <button onclick="createUser()">Sign up</button>
+                </section>
+            </main>

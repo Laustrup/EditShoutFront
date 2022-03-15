@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <head th:replace="@{/fragments/head.html}"></head>
+
+    <body>
+
+        <header th:replace="@{/fragments/header.html}"></header>
+
+        <div th:if="${body eq 'login'}">
+            <main th:replace="@{/fragments/bodies/login.html}"></main>
+        </div>
+
+        <div th:if="${body eq 'dashboard'}">
+            <main th:replace="@{/fragments/bodies/dashboard.html}"></main>
+            <script src="../static/javascripts/fetch.js" type="text/javascript"></script>
+            <script src="../static/javascripts/delete.js" type="text/javascript"></script>
+            <script src="../static/javascripts/edit.js" type="text/javascript"></script>
+        </div>
+
+        <script src="../static/javascripts/login.js" type="text/javascript"></script>
+        <script src="../static/javascripts/create.js" type="text/javascript"></script>
+    </body>
+
+</html>
